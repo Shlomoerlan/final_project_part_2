@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_89aa260615c8953712c7d43584f77be8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_89aa260615c8953712c7d43584f77be8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_89aa260615c8953712c7d43584f77be8 = L.map(
+                "map_89aa260615c8953712c7d43584f77be8",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4e8b121b303f4d7de3813390cfbd5df4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4e8b121b303f4d7de3813390cfbd5df4.addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+            var circle_marker_0baa239fc286cfd10e8e4cbf7ca45bf6 = L.circleMarker(
+                [28.0, 77.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_b530ee3abc9984be4d4dd6597300be5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00de3f1c0951bfff93f4c5628c189579 = $(`<div id="html_00de3f1c0951bfff93f4c5628c189579" style="width: 100.0%; height: 100.0%;">South Asia: 6.00 casualties</div>`)[0];
+                popup_b530ee3abc9984be4d4dd6597300be5e.setContent(html_00de3f1c0951bfff93f4c5628c189579);
+            
+        
+
+        circle_marker_0baa239fc286cfd10e8e4cbf7ca45bf6.bindPopup(popup_b530ee3abc9984be4d4dd6597300be5e)
+        ;
+
+        
+    
+    
+            var circle_marker_fde28b1994416a77c364d0eff805f3ae = L.circleMarker(
+                [-1.5, 30.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3137931034482758, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_6f76d7563d356e1bc1b4fdb3776c7eb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fd2ff27f00af7f1ec288b5d156601d7 = $(`<div id="html_7fd2ff27f00af7f1ec288b5d156601d7" style="width: 100.0%; height: 100.0%;">Sub-Saharan Africa: 3.14 casualties</div>`)[0];
+                popup_6f76d7563d356e1bc1b4fdb3776c7eb9.setContent(html_7fd2ff27f00af7f1ec288b5d156601d7);
+            
+        
+
+        circle_marker_fde28b1994416a77c364d0eff805f3ae.bindPopup(popup_6f76d7563d356e1bc1b4fdb3776c7eb9)
+        ;
+
+        
+    
+    
+            var circle_marker_0cd77934440e41a174f717d03098aacb = L.circleMarker(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.18125, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_f151dc5ae5e901fb609120ab1debae19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39e564804e933176a7d69ddeb270c3a9 = $(`<div id="html_39e564804e933176a7d69ddeb270c3a9" style="width: 100.0%; height: 100.0%;">Western Europe: 1.81 casualties</div>`)[0];
+                popup_f151dc5ae5e901fb609120ab1debae19.setContent(html_39e564804e933176a7d69ddeb270c3a9);
+            
+        
+
+        circle_marker_0cd77934440e41a174f717d03098aacb.bindPopup(popup_f151dc5ae5e901fb609120ab1debae19)
+        ;
+
+        
+    
+    
+            var circle_marker_88077cb46b03dc58fb1f7ffea5f98dac = L.circleMarker(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.11875, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_8e65073a329576dd1bf9851c95ce3b3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcfd974c5f0d6ee268eeee8fed0c7cb2 = $(`<div id="html_fcfd974c5f0d6ee268eeee8fed0c7cb2" style="width: 100.0%; height: 100.0%;">Southeast Asia: 1.19 casualties</div>`)[0];
+                popup_8e65073a329576dd1bf9851c95ce3b3e.setContent(html_fcfd974c5f0d6ee268eeee8fed0c7cb2);
+            
+        
+
+        circle_marker_88077cb46b03dc58fb1f7ffea5f98dac.bindPopup(popup_8e65073a329576dd1bf9851c95ce3b3e)
+        ;
+
+        
+    
+    
+            var circle_marker_4dbf24dc08733d6f5855976b3d9ee6c9 = L.circleMarker(
+                [37.1, -95.7],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.04896421845574388, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_0735f2f94f480e1a871a854a5f4d2b9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_065149c5d2b68452d28d44b5cdf92def = $(`<div id="html_065149c5d2b68452d28d44b5cdf92def" style="width: 100.0%; height: 100.0%;">North America: 0.49 casualties</div>`)[0];
+                popup_0735f2f94f480e1a871a854a5f4d2b9d.setContent(html_065149c5d2b68452d28d44b5cdf92def);
+            
+        
+
+        circle_marker_4dbf24dc08733d6f5855976b3d9ee6c9.bindPopup(popup_0735f2f94f480e1a871a854a5f4d2b9d)
+        ;
+
+        
+    
+    
+            var circle_marker_1cebbdd1c39aad85a9d6e3cc1cde4e72 = L.circleMarker(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.03777777777777778, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_ea8d52da3922beb9f62002bdf05a162e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aca53fba1b396ee19f6cc8b88243f5e2 = $(`<div id="html_aca53fba1b396ee19f6cc8b88243f5e2" style="width: 100.0%; height: 100.0%;">Eastern Europe: 0.38 casualties</div>`)[0];
+                popup_ea8d52da3922beb9f62002bdf05a162e.setContent(html_aca53fba1b396ee19f6cc8b88243f5e2);
+            
+        
+
+        circle_marker_1cebbdd1c39aad85a9d6e3cc1cde4e72.bindPopup(popup_ea8d52da3922beb9f62002bdf05a162e)
+        ;
+
+        
+    
+    
+            var circle_marker_27618705d2feb5dc4d1eaafcb33b323c = L.circleMarker(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.037037037037037035, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_2656cfa571205ea2163a2f6857fe9d09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d25fc06f268c0f6b967afbb6c4dc2150 = $(`<div id="html_d25fc06f268c0f6b967afbb6c4dc2150" style="width: 100.0%; height: 100.0%;">Central America & Caribbean: 0.37 casualties</div>`)[0];
+                popup_2656cfa571205ea2163a2f6857fe9d09.setContent(html_d25fc06f268c0f6b967afbb6c4dc2150);
+            
+        
+
+        circle_marker_27618705d2feb5dc4d1eaafcb33b323c.bindPopup(popup_2656cfa571205ea2163a2f6857fe9d09)
+        ;
+
+        
+    
+    
+            var circle_marker_c64f6e85b40498d5592ed4461c55e064 = L.circleMarker(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.03492063492063492, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_07656da0bce2ee40192808506dad84a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c254bc80fb1f48b255dc009c1a346e53 = $(`<div id="html_c254bc80fb1f48b255dc009c1a346e53" style="width: 100.0%; height: 100.0%;">South America: 0.35 casualties</div>`)[0];
+                popup_07656da0bce2ee40192808506dad84a5.setContent(html_c254bc80fb1f48b255dc009c1a346e53);
+            
+        
+
+        circle_marker_c64f6e85b40498d5592ed4461c55e064.bindPopup(popup_07656da0bce2ee40192808506dad84a5)
+        ;
+
+        
+    
+    
+            var circle_marker_6613f986b344f4d2fbef7faba093889f = L.circleMarker(
+                [26.0, 29.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.03406593406593407, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_79a2d1781d9feec86575747827019cca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcd1ce88bb3a90ae49a64c154165772b = $(`<div id="html_fcd1ce88bb3a90ae49a64c154165772b" style="width: 100.0%; height: 100.0%;">Middle East & North Africa: 0.34 casualties</div>`)[0];
+                popup_79a2d1781d9feec86575747827019cca.setContent(html_fcd1ce88bb3a90ae49a64c154165772b);
+            
+        
+
+        circle_marker_6613f986b344f4d2fbef7faba093889f.bindPopup(popup_79a2d1781d9feec86575747827019cca)
+        ;
+
+        
+    
+    
+            var circle_marker_8090715a74bd949879995e03d8ca51b5 = L.circleMarker(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_89aa260615c8953712c7d43584f77be8);
+        
+    
+        var popup_76775f52dfb11c3caf9e70a5e61d77b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10d21183a77f622159ebb623cb3b780b = $(`<div id="html_10d21183a77f622159ebb623cb3b780b" style="width: 100.0%; height: 100.0%;">Australasia & Oceania: 0.00 casualties</div>`)[0];
+                popup_76775f52dfb11c3caf9e70a5e61d77b8.setContent(html_10d21183a77f622159ebb623cb3b780b);
+            
+        
+
+        circle_marker_8090715a74bd949879995e03d8ca51b5.bindPopup(popup_76775f52dfb11c3caf9e70a5e61d77b8)
+        ;
+
+        
+    
+</script>
+</html>
