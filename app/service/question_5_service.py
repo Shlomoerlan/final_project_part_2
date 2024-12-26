@@ -16,16 +16,11 @@ def get_month_name(month: int) -> str:
         return 'Unknown'
 
 
-
-
 def create_time_series_plot(data: List[TrendAnalysis], title: str) -> BytesIO:
-    """יצירת גרף והמרתו ל-BytesIO"""
     fig = go.Figure()
 
-    # סינון נתונים לא תקינים
     valid_data = [d for d in data if d.time_period != 'Unknown']
 
-    # הוספת קו התדירות
     fig.add_trace(
         go.Scatter(
             x=[d.time_period for d in valid_data],
@@ -37,7 +32,6 @@ def create_time_series_plot(data: List[TrendAnalysis], title: str) -> BytesIO:
         )
     )
 
-    # הוספת עמודות הספירה
     fig.add_trace(
         go.Bar(
             x=[d.time_period for d in valid_data],
@@ -48,7 +42,6 @@ def create_time_series_plot(data: List[TrendAnalysis], title: str) -> BytesIO:
         )
     )
 
-    # עדכון העיצוב
     fig.update_layout(
         title=title,
         xaxis_title="Time Period",
@@ -63,7 +56,6 @@ def create_time_series_plot(data: List[TrendAnalysis], title: str) -> BytesIO:
         hovermode='x'
     )
 
-    # המרה לתמונה
     img_bytes = BytesIO()
     fig.write_image(img_bytes, format='png')
     img_bytes.seek(0)
@@ -71,14 +63,13 @@ def create_time_series_plot(data: List[TrendAnalysis], title: str) -> BytesIO:
 
 @curry
 def get_monthly_trends(session, year: int) -> List[TrendAnalysis]:
-    """קבלת מגמות חודשיות עם טיפול בחודשים לא תקינים"""
     monthly_counts = (
         session.query(
             Event.imonth,
             func.count(Event.event_id).label('count')
         )
         .filter(Event.iyear == year)
-        .filter(Event.imonth.isnot(None))  # סינון ערכי null
+        .filter(Event.imonth.isnot(None))
         .group_by(Event.imonth)
         .order_by(Event.imonth)
         .all()
@@ -87,7 +78,7 @@ def get_monthly_trends(session, year: int) -> List[TrendAnalysis]:
     total_months = 12
     return [
         TrendAnalysis(
-            time_period=get_month_name(month),  # שימוש בפונקציית ההמרה החדשה
+            time_period=get_month_name(month),
             count=count,
             frequency=count / total_months
         )

@@ -1,5 +1,4 @@
-from typing import Optional, List, Tuple
-
+from typing import Optional
 from app.repository.question_3_repository import get_top_groups_by_casualties
 import plotly.graph_objects as go
 import base64
@@ -9,11 +8,9 @@ def display_top_groups_by_casualties(top_n: Optional[int] = None) -> list[tuple[
 
 
 def create_bar_chart(data, title="Attack Types Severity"):
-    # Extract keys and values from the list of tuples
     keys = [item[0] for item in data]
     values = [item[1] for item in data]
 
-    # Create the bar chart
     fig = go.Figure(
         data=[
             go.Bar(
@@ -34,6 +31,3 @@ def create_bar_chart(data, title="Attack Types Severity"):
     return f"data:image/png;base64,{base64_img}"
 
 
-
-if __name__ == "__main__":
-    display_top_groups_by_casualties(top_n=5)

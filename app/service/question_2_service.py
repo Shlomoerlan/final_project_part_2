@@ -1,9 +1,8 @@
 from typing import List, Tuple
 import folium
-from app.repository.question_2_repository import get_average_casualties_by_region
 
 
-def create_map_with_regions(data: List[Tuple[str, float]], map_file: str = "region_map.html"):
+def create_map_with_regions(data: List[Tuple[str, float]]):
     REGION_COORDINATES = {
         "Middle East & North Africa": [26.0, 29.0],
         "South Asia": [28.0, 77.0],

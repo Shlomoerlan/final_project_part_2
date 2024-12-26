@@ -1,10 +1,9 @@
 import base64
 from typing import Optional, List, Tuple, Dict, Any
-from toolz import curry, reduce
+from toolz import reduce
 from app.db.database import session_maker
 from app.repository.question_1_repository import create_query_for_attack_types
 import plotly.graph_objects as go
-import matplotlib.pyplot as plt
 
 
 def get_attack_types_severity(top_n: Optional[int] = None) -> List[Tuple[str, float]]:
